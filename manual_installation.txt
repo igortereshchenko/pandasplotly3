@@ -1,0 +1,7 @@
+1. pip install pandas
+
+2. pip install google-cloud-bigquery
+
+3. pip install -e git+https://github.com/SohierDane/BigQuery_Helper#egg=bq_helper
+
+4. pip install plotly
