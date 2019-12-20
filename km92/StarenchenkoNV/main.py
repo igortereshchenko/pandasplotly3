@@ -20,11 +20,12 @@ b = df.groupby(["state_name"])['state_name'].count()
 
 print(b)
 
-print(type(b))
-
+print(type(b.index), type(b.values))
+'''
 trace1 = go.Bar(
     x = b.index
     ,y = b.values
 )
 
 plot(trace1)
+'''
