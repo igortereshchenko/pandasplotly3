@@ -21,13 +21,13 @@ fig=dict(data=[trace1])
 plot(fig)
 
 trace2= go.Bar(
-    x=["vehicle_number"],
-    y=["driver_maneuvered_to_avoid_name"],
+    x=df["vehicle_number"],
+    y=df["driver_maneuvered_to_avoid_name"],
             )
 fig=go.Figure(data=[trace2])
 plot(fig)
 
-trace3=go.Figure(data=[go.Pie(labels= "driver_maneuvered_to_avoid_name", values="vehicle_number")])
+trace3=go.Figure(data=[go.Pie(labels= df["driver_maneuvered_to_avoid_name"], values= df["vehicle_number"])])
 
 plot(trace3)
 
