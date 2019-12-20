@@ -1,0 +1,4 @@
+1. functional_system - 01 (Interstate), 02 (Principal Arterial – Other Freeways and Expressways), 03 (Principal Arterial – Other), 04 (Minor Arterial), 05 (Major Collector), 06 (Minor Collector), 07 (Local), 96 (Trafficway Not in State Inventory), 98 (Not Reported), and 99 (Unknown).
+2. day_of_week - This data element records the day of the week on which the crash occurred. 1 Sunday 2 Monday 3 Tuesday 4 Wednesday 5 Thursday 6 Friday 7 Saturday -- Unknown
+3. number_of_drunk_drivers - This data element records the number of drunk drivers involved in the crash. 00-99 Number of Drunk Drivers Involved in the Fatal Crash.
+4. day_of_crash - This data element records the day of the month on which the crash occurred. 01-31 Day of the Month of the Crash -- Unknown
