@@ -44,16 +44,16 @@ fig = px.pie(df, values=reason_groupby.values, names=reason_groupby.index)
 plot(fig)
 
 
-# # ----------scatter plot ----------
-# trace1 = go.Scatter(
-#                     x = state_groupby.index,
-#                     y = state_groupby.values,
-#                     mode = "lines+markers",
-#                     name = "fatalities"
-#                     )
-#
-# layout = dict(title = 'fatalities',
-#               xaxis= dict(title= 'reasons'),
-#               yaxis=dict(title='states'))
-# fig3 = dict(data = trace1, layout = layout)
-# # plot(fig3)
+# ----------scatter plot ----------
+trace1 = go.Scatter(
+                    x = state_groupby.index,
+                    y = state_groupby.values,
+                    mode = "lines+markers",
+                    name = "fatalities"
+                    )
+
+layout = dict(title = 'fatalities',
+              xaxis= dict(title= 'reasons'),
+              yaxis=dict(title='states'))
+fig3 = dict(data = trace1, layout = layout)
+plot(fig3)
