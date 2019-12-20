@@ -64,3 +64,7 @@ scatter_layout = dict(
 )
 
 plot(dict(data=[sc_1, sc_2, sc_3], layout=scatter_layout))
+
+group_by_accident_name = df.groupby(["driver_maneuvered_to_avoid_name"])["driver_maneuvered_to_avoid_name"].count()
+
+plot(go.Figure(data=[go.Pie(labels=group_by_accident_name.index, values=group_by_accident_name.values)]))
