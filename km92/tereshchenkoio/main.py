@@ -1,12 +1,12 @@
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="keys.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="keys.json.json"
 
 import pandas as pd
 from bq_helper import BigQueryHelper
 import plotly.graph_objs as go
 from plotly.offline import plot
 
-bq_assistant = BigQueryHelper(,)
+bq_assistant = BigQueryHelper()
 
 
 QUERY = """

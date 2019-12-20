@@ -1,0 +1,4 @@
+1. state_number - номер штата в котором случилось проишествие
+2. consecutive_number - уникальный номер проишествия
+3. driver_distracted_by - степень внимательности водителя
+3. driver_distracted_by_name - на что был отвлёкся водитель
