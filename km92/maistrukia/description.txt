@@ -1,0 +1,4 @@
+state_number - номер штата, в якому трапилась ДТП (int)
+state_name - сам штат(назва), в якому трапилась ДТП (str)
+number_of_motor_vehicles_in_transport_mvit - кількість моторизованих транспортних засобів, що беруть участь в ДТП (int)
+number_of_persons_in_motor_vehicles_in_transport_mvit - кількість людей в транспортних засобах, що беруть участь в ДТП (int)
