@@ -1,0 +1,4 @@
+state_number - id штату де трапилось ДТП
+vehicle_number - id цього виду транспорту
+driver_maneuvered_to_avoid - id того що спричинило ДТП
+driver_maneuvered_to_avoid_name - назва того що спричинило ДТП
