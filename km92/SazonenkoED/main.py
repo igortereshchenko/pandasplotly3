@@ -2,6 +2,7 @@ import os
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="keys.json"
 
 from bq_helper import BigQueryHelper
+import plotly.express as px
 import plotly.graph_objs as go
 from plotly.offline import plot
 
@@ -13,11 +14,15 @@ QUERY = """
         """
 df = bq_assistant.query_to_pandas(QUERY)
 
-print(df)
+# print(df)
 
 
-reason_groupby = df.groupby(['driver_maneuvered_to_avoid_name'])['state_number'].count()
+reason_groupby = df.groupby(['driver_maneuvered_to_avoid_name'])['consecutive_number'].count()
+state_groupby  = df.groupby(['state_number'])['vehicle_number'].count()
+print(reason_groupby)
 
+
+# ---------- bar plot ----------
 fig2 = {
   "data": [
     {
@@ -32,3 +37,23 @@ fig2 = {
     }
 }
 plot(fig2)
+
+
+# ---------- pie plot ----------
+fig = px.pie(df, values=reason_groupby.values, names=reason_groupby.index)
+plot(fig)
+
+
+# # ----------scatter plot ----------
+# trace1 = go.Scatter(
+#                     x = state_groupby.index,
+#                     y = state_groupby.values,
+#                     mode = "lines+markers",
+#                     name = "fatalities"
+#                     )
+#
+# layout = dict(title = 'fatalities',
+#               xaxis= dict(title= 'reasons'),
+#               yaxis=dict(title='states'))
+# fig3 = dict(data = trace1, layout = layout)
+# # plot(fig3)
