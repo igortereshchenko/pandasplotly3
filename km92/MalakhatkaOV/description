@@ -1,0 +1,4 @@
+consecutive_number : унікальний код аварії
+state_number : код штату у якому була аварія
+vehicle_number : номер назначенний каждому автомобілю
+condition_impairment_at_time_of_crash_driver : стан водія під часа аварії
