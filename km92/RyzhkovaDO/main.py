@@ -25,18 +25,18 @@ trace1 = go.Scatter(
                     mode="lines",
                     )
 
-fig = dict(data=[trace1])
-plot(fig)
+fig_1 = dict(data=[trace1])
+plot(fig_1)
 
 trace2 = go.Bar(
     x = df["state_number"],
     y = df["driver_maneuvered_to_avoid_name"],
               )
 
-fig = go.Figure(data=[trace2])
-plot(fig)
+fig_2 = go.Figure(data=[trace2])
+plot(fig_2)
 
 
+trace3 = go.Figure(data=[go.Pie(labels=df["driver_maneuvered_to_avoid_name"], values=df["vehicle_number"])])
 
-
-
+plot(trace3)
