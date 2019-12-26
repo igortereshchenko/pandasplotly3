@@ -1,0 +1,6 @@
+consecutive_number -ідетнтифікаційний номер аварії
+state_number - назва штату
+vehicle_number- кількіть  транспортніх засобів
+driver_maneuvered_to_avoid_name - умови на дорозі
+
+
